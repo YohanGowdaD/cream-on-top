@@ -38,9 +38,9 @@ The WhatsApp conversation and a quote do not confirm an order. Order confirmatio
 
 ## Brand photography
 
-Cake and founder imagery uses the user's photographs in `reference-assets/new_assets/`, including the pastel princess hero, founder portrait, studio photographs, and new gallery designs. Images are optimized as WebP, and the gallery contains twelve real creations. The two wedding photographs retain their earlier supplied screenshot sources because the new folder has no matching replacements. See [ASSET_SOURCES.md](ASSET_SOURCES.md) for exact sources and crop coordinates. The eight-year badge is a historical milestone.
+The cake imagery now uses twelve original AI-generated designs, plus one generated atelier scene, created with the built-in image generation tool at the user's request. Crisp WebP assets are stored in `public/images/generated/`; full-resolution originals and exact prompts are retained in `output/imagegen/`. The interface identifies these images as design inspiration. Neha's real founder portrait remains the supplied photograph, and the eight-year badge is a historical milestone. See [ASSET_SOURCES.md](ASSET_SOURCES.md) for the current image map and [ASSET_SOURCES_ORIGINALS.md](ASSET_SOURCES_ORIGINALS.md) for the original photograph provenance.
 
-The Instagram section is a curated local gallery linking to the actual profile; it does not claim a live API integration. Testimonials are the three supplied reviews.
+The social section shows generated inspiration and links to Neha's actual Instagram profile for her latest work. It does not claim that the generated images are Instagram posts or a live API integration. Testimonials are the three supplied reviews.
 
 Cormorant Garamond and DM Sans are self-hosted in `src/fonts/`; no external font requests are needed when viewing the website. The download helper in `scripts/download-fonts.py` is only a development utility.
 
@@ -60,12 +60,14 @@ npm run test:e2e
 
 The Playwright configuration uses installed Google Chrome. It covers filters, collection navigation, lightbox controls and keyboard access, testimonials, mobile navigation, form validation, local reference previews, and draft generation. Browser screenshots are saved under `artifacts/` during visual review.
 
-Verification completed: production build and TypeScript passed, and all 26 Playwright checks passed. These include touch swipes, active navigation, valid enquiry progress, keyboard interactions, and hydration checks under both motion preferences. Visual review at 1440px, 1024px, 768px, 390px, and 360px found no horizontal overflow, broken visible images, hidden sections, or browser console errors. See `artifacts/visual-report.json` and the desktop/mobile screenshots for the recorded review.
+Verification completed: TypeScript and all 33 Playwright checks passed. These include touch swipes, active navigation, valid enquiry progress, keyboard interactions, and hydration checks under both motion preferences. Four photo regressions verify that the introduction and founder images load and paint after normal-motion scrolling on desktop/mobile and direct section links. Their checks cover clipping, viewport intersection, and rendered pixels. Three image-loading checks cover initial hero priority, restored-scroll reloads, direct collection links, deferred offscreen images, and LCP warnings. Visual review at 1440px, 1024px, 768px, 390px, and 360px found no horizontal overflow, broken visible images, hidden sections, or browser console errors. See `artifacts/visual-report.json` and the desktop/mobile screenshots for the recorded review.
 
 ## Structure
 
 `src/app/` contains routing, metadata, and global styling; `src/components/` contains the thirteen sections and shared interactions; `src/data/` holds gallery and testimonial content; `src/lib/enquiry.ts` owns validation and WhatsApp formatting; `src/config/business.ts` holds verified business information and launch configuration.
 
 Designed for 360px mobile through desktop screens, with reduced-motion support, focus states, accessible dialogs, and lazy-loaded images below the hero.
+
+Images in the initial viewport load eagerly with high priority, including when a browser restores its scroll position. Distant images remain lazy; images approaching the viewport are promoted when needed. The shared `ViewportImage` component handles initial measurement, section links, and page restoration without changing the server/client hydration snapshot.
 
 Body copy and form inputs use at least 16px text; navigation, buttons, labels, and compact notes use larger readable sizes. Phone layouts reflow the header, gallery, form, and footer to accommodate the text instead of shrinking it.

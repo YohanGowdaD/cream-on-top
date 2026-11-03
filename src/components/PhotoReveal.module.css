@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+.mask {
+  position: absolute;
+  inset: 0;
+}
+
 .imageSurface {
   position: absolute;
   inset: -16px 0;
@@ -13,7 +18,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .frame {
+  .mask {
     clip-path: none !important;
   }
   .imageSurface {

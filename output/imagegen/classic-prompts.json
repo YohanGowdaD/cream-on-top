@@ -1,0 +1,51 @@
+{
+  "mode": "built-in image_gen",
+  "classification": "AI-generated concept imagery, not photographs of actual business creations",
+  "use_case": "product-mockup",
+  "records": [
+    {
+      "name": "golden-birthday",
+      "prompt": "Use case: product-mockup.\nAsset type: a single standalone photorealistic cake photograph for a premium boutique bakery website concept. This is an illustrative concept image, not documentation of any real bakery's work.\nScene/backdrop: warm ivory plaster seamless background, pale beige stone table or low plinth, completely uncluttered.\nStyle/medium: exceptionally high-resolution real editorial food and product photography. Natural edible frosting and hand-finished texture; no CGI, plastic, illustration or exaggerated styling.\nComposition/framing: portrait 2:3 composition, use the highest native resolution available. Front three-quarter view at cake level, entire cake and its simple elegant stand visible, cake centred with generous breathing room above the topper, below the stand and on both sides for responsive website crops. Cake fills about 65 percent of the frame height.\nLighting/mood: soft directional daylight from the left, subtle natural shadows, rich but gentle tonal detail. The entire cake, decorations and frosting are tack-sharp; background softness only. Warm ivory, restrained blush and muted gold styling.\nConstraints: one cake in one photograph, no collage, no surrounding props, no flowers unless explicitly requested in the subject, no humans or hands, no cut slices, no text, letters, numerals, monograms, brands, logos or watermarks.\nSubject: one refined single-tier ivory birthday cake on a low ivory ceramic stand. A petite, delicately crafted gold sugar crown sits on top. Smooth ivory buttercream has subtle vertical spatula texture, fine scattered edible gold leaf accents and an understated tiny piped pearl border at the base. The crown is tasteful and realistic, not oversized. No flowers, number toppers or additional decorations.",
+      "original_project_path": "output/imagegen/golden-birthday.png",
+      "web_path": "public/images/generated/golden-birthday.webp",
+      "source_generated_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-5329-7f62-a811-b50e3a7d310a\\exec-0df4d2ea-34ca-49c5-b0ce-6c64e8bac1e9.png",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 2012114,
+      "web_bytes": 137850
+    },
+    {
+      "name": "pearl-wedding",
+      "prompt": "Use case: product-mockup.\nAsset type: a single standalone photorealistic cake photograph for a premium boutique bakery website concept. This is an illustrative concept image, not documentation of any real bakery's work.\nScene/backdrop: warm ivory plaster seamless background, pale beige stone table or low plinth, completely uncluttered.\nStyle/medium: exceptionally high-resolution real editorial food and product photography. Natural edible frosting and hand-finished texture; no CGI, plastic, illustration or exaggerated styling.\nComposition/framing: portrait 2:3 composition, use the highest native resolution available. Front three-quarter view at cake level, entire cake and its simple elegant stand visible, cake centred with generous breathing room above the topper, below the stand and on both sides for responsive website crops. Cake fills about 65 percent of the frame height.\nLighting/mood: soft directional daylight from the left, subtle natural shadows, rich but gentle tonal detail. The entire cake, decorations and frosting are tack-sharp; background softness only. Warm ivory, restrained blush and muted gold styling.\nConstraints: one cake in one photograph, no collage, no surrounding props, no flowers unless explicitly requested in the subject, no humans or hands, no cut slices, no text, letters, numerals, monograms, brands, logos or watermarks.\nSubject: a beautifully proportioned three-tier ivory wedding cake on a simple low pale stone cake stand. Delicate ivory pearl piping traces the edges of each tier, with refined scalloped pearl details and very restrained edible gold leaf on the middle tier. Perfectly elegant real buttercream surfaces with tiny natural hand-finished imperfections. Absolutely no flowers, foliage, floral shapes or figurines. The cake and complete stand are both in focus.",
+      "original_project_path": "output/imagegen/pearl-wedding.png",
+      "web_path": "public/images/generated/pearl-wedding.webp",
+      "source_generated_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-5329-7f62-a811-b50e3a7d310a\\exec-59b9edb2-2f8e-4bde-bed5-103ba531cfe2.png",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 1989698,
+      "web_bytes": 127812
+    },
+    {
+      "name": "floral-wedding",
+      "prompt": "Use case: product-mockup.\nAsset type: a single standalone photorealistic cake photograph for a premium boutique bakery website concept. This is an illustrative concept image, not documentation of any real bakery's work.\nScene/backdrop: warm ivory plaster seamless background, pale beige stone table or low plinth, completely uncluttered.\nStyle/medium: exceptionally high-resolution real editorial food and product photography. Natural edible frosting and hand-finished texture; no CGI, plastic, illustration or exaggerated styling.\nComposition/framing: portrait 2:3 composition, use the highest native resolution available. Front three-quarter view at cake level, entire cake and its simple elegant stand visible, cake centred with generous breathing room above the topper, below the stand and on both sides for responsive website crops. Cake fills about 65 percent of the frame height.\nLighting/mood: soft directional daylight from the left, subtle natural shadows, rich but gentle tonal detail. The entire cake, decorations and frosting are tack-sharp; background softness only. Warm ivory, restrained blush and muted gold styling.\nConstraints: one cake in one photograph, no collage, no surrounding props, no flowers unless explicitly requested in the subject, no humans or hands, no cut slices, no text, letters, numerals, monograms, brands, logos or watermarks.\nSubject: an elegant two-tier ivory wedding cake on a low pale beige ceramic cake stand. A restrained asymmetrical arrangement of three or four sculpted edible blush garden roses gathers on the upper-left edge and descends slightly across the join between tiers. A few muted rose petals rest close to the flowers on the cake, with subtle ivory piping along the tier edges. Petals must have delicate believable sugar-work texture and fine edges, not plastic shine. No greenery, no writing and no scattered table props.",
+      "original_project_path": "output/imagegen/floral-wedding.png",
+      "web_path": "public/images/generated/floral-wedding.webp",
+      "source_generated_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-5329-7f62-a811-b50e3a7d310a\\exec-193e8bda-8b99-4bc1-9393-261fdc77e61b.png",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 2127263,
+      "web_bytes": 156950
+    },
+    {
+      "name": "midnight-celebration",
+      "prompt": "Use case: product-mockup.\nAsset type: a single standalone photorealistic cake photograph for a premium boutique bakery website concept. This is an illustrative concept image, not documentation of any real bakery's work.\nScene/backdrop: warm ivory plaster seamless background, pale beige stone table or low plinth, completely uncluttered.\nStyle/medium: exceptionally high-resolution real editorial food and product photography. Natural edible frosting and hand-finished texture; no CGI, plastic, illustration or exaggerated styling.\nComposition/framing: portrait 2:3 composition, use the highest native resolution available. Front three-quarter view at cake level, entire cake and its simple elegant stand visible, cake centred with generous breathing room above the topper, below the stand and on both sides for responsive website crops. Cake fills about 65 percent of the frame height.\nLighting/mood: soft directional daylight from the left, subtle natural shadows, rich but gentle tonal detail. The entire cake, decorations and frosting are tack-sharp; background softness only. Warm ivory, restrained blush and muted gold styling.\nConstraints: one cake in one photograph, no collage, no surrounding props, no flowers unless explicitly requested in the subject, no humans or hands, no cut slices, no text, letters, numerals, monograms, brands, logos or watermarks.\nSubject: one exceptionally elegant single-tier dark chocolate celebration cake on a simple low ivory ceramic stand. Deep espresso chocolate ganache has fine silky spatula texture. Two thin graceful edible gold arcs rise slightly above the top and a restrained cluster of fine edible gold chocolate shards decorates one edge. A few subtle gold leaf fragments accent the side. The contrast between dark chocolate and warm ivory background is rich and luxurious. No numerals, themes, flowers, logos, fruit, candles or words.",
+      "original_project_path": "output/imagegen/midnight-celebration.png",
+      "web_path": "public/images/generated/midnight-celebration.webp",
+      "source_generated_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-5329-7f62-a811-b50e3a7d310a\\exec-1cb8b3a8-f128-4f13-9c44-8f39443ff159.png",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 2081184,
+      "web_bytes": 166836
+    }
+  ]
+}

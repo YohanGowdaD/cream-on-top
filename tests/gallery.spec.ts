@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 });
 
-test("gallery filters show only matching real creations and can reset", async ({ page }) => {
+test("gallery filters show only matching cake inspirations and can reset", async ({ page }) => {
   const gallery = page.locator("#creations");
   const filters = gallery.getByRole("group", { name: "Filter cake creations" });
   await gallery.scrollIntoViewIfNeeded();
@@ -19,10 +19,10 @@ test("gallery filters show only matching real creations and can reset", async ({
   const categories = [
     { name: "Birthday", count: 3, expectedTitle: "The golden birthday" },
     { name: "Wedding", count: 2, expectedTitle: "A gilded forever" },
-    { name: "Anniversary", count: 1, expectedTitle: "Eight years of sweet memories" },
+    { name: "Anniversary", count: 1, expectedTitle: "A ribbon of romance" },
     { name: "Kids", count: 2, expectedTitle: "A wild little celebration" },
-    { name: "Designer", count: 1, expectedTitle: "A Barbie kind of birthday" },
-    { name: "Custom", count: 3, expectedTitle: "Fifty, in the spotlight" },
+    { name: "Designer", count: 1, expectedTitle: "Blush couture" },
+    { name: "Custom", count: 3, expectedTitle: "After dark, in gold" },
   ];
 
   for (const category of categories) {
@@ -104,13 +104,13 @@ test("lightbox supports buttons, arrow keys, focus trapping and Escape", async (
 test("a single category image has safe disabled navigation", async ({ page }) => {
   const gallery = page.locator("#creations");
   await gallery.getByRole("button", { name: "Designer", exact: true }).click();
-  await gallery.getByRole("button", { name: "View A Barbie kind of birthday in full screen" }).click();
+  await gallery.getByRole("button", { name: "View Blush couture in full screen" }).click();
 
   const dialog = page.getByRole("dialog");
   await expect(dialog.getByRole("button", { name: "Previous cake image" })).toBeDisabled();
   await expect(dialog.getByRole("button", { name: "Next cake image" })).toBeDisabled();
   await page.keyboard.press("ArrowRight");
-  await expect(dialog.getByRole("heading", { name: "A Barbie kind of birthday" })).toBeVisible();
+  await expect(dialog.getByRole("heading", { name: "Blush couture" })).toBeVisible();
   await dialog.getByRole("button", { name: "Close image gallery" }).click();
   await expect(dialog).toBeHidden();
 });

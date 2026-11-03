@@ -3,6 +3,7 @@
 import { useReducedMotionPreference } from "@/lib/useReducedMotionPreference";
 
 import Image from "next/image";
+import { ViewportImage } from "./ViewportImage";
 import {
   useCallback,
   useEffect,
@@ -176,7 +177,7 @@ export function CreationsGallery() {
             A Gallery of <em>Sweet Moments</em>
           </h2>
           <p className="section-intro">
-            A little imagination. A personal touch. A creation that&apos;s entirely yours.
+            AI-generated cake inspiration. Explore a direction, then create your own with Neha.
           </p>
         </motion.div>
 
@@ -209,7 +210,7 @@ export function CreationsGallery() {
 
         <p className={styles.resultCount} aria-live="polite" aria-atomic="true">
           {category === "all"
-            ? "A few of our favourite creations"
+            ? "Twelve ideas for your next celebration"
             : `${visibleCakes.length} ${visibleCakes.length === 1 ? "creation" : "creations"} to inspire your celebration`}
         </p>
 
@@ -246,10 +247,11 @@ export function CreationsGallery() {
                   }}
                   aria-label={`View ${cake.title} in full screen`}
                 >
-                  <Image
+                  <ViewportImage
                     src={cake.image}
                     alt={cake.alt}
                     fill
+                    quality={90}
                     sizes="(max-width: 460px) calc(100vw - 44px), (max-width: 700px) calc((100vw - 56px) / 2), (max-width: 1000px) calc((100vw - 102px) / 3), (max-width: 1280px) calc((100vw - 168px) / 3), 371px"
                     style={{ objectPosition: cake.position ?? "center" }}
                   />
@@ -333,17 +335,18 @@ export function CreationsGallery() {
                       src={activeCake.image}
                       alt={activeCake.alt}
                       fill
+                      quality={90}
                       sizes="(max-width: 600px) 94vw, 80vw"
                       className={styles.fullImage}
                       draggable={false}
-                      priority
+                      loading="eager"
                     />
                   </motion.div>
                 </AnimatePresence>
               </motion.div>
               <div className={styles.lightboxBottom}>
                 <div className={styles.lightboxDescription} aria-live="polite" aria-atomic="true">
-                  <p>{activeCake.subtitle}</p>
+                  <p>AI-generated design inspiration</p>
                   <h3 id={dialogTitleId}>{activeCake.title}</h3>
                   {visibleCakes.length > 1 && (
                     <span className={styles.swipeHint} aria-hidden="true">Swipe to explore</span>

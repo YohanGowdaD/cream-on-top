@@ -67,10 +67,10 @@ export function Hero() {
             <motion.div className={styles.depthLayer} style={{ y: depth }}>
               <motion.div className={styles.imageLayer} style={{ x: reduced ? 0 : pointerX, y: reduced ? 0 : pointerY }}
                 initial={{ scale: 1.1 }} animate={{ scale: 1.02 }} transition={{ duration: reduced ? 0 : 1.8, ease: editorialEase }}>
-                <Image src="/images/hero/hero-princess.webp" alt="A handcrafted princess cake with a pastel fondant skirt and delicate pink and ivory flowers, by Cream on Top by Neha Gupta" fill preload sizes="(max-width: 767px) 85vw, (max-width: 1200px) 40vw, 440px" quality={90} style={{ objectPosition: "50% 48%" }}/>
+                <Image src="/images/generated/hero-cover.webp" alt="AI-generated cake inspiration: an ivory and blush two-tier cake with sugar roses, pearl piping and a cascading fondant bow" fill loading="eager" fetchPriority="high" sizes="(max-width: 767px) 85vw, (max-width: 1200px) 40vw, 440px" quality={90} style={{ objectPosition: "50% 50%" }}/>
               </motion.div>
             </motion.div>
-            <span className={styles.photoLabel}>A CREAM ON TOP ORIGINAL</span>
+            <span className={styles.photoLabel}>AI-GENERATED INSPIRATION</span>
           </motion.div>
           <motion.div className={styles.seal} style={{ rotate: sealRotation }} initial={{ opacity: 0, scale: 0.86 }} animate={{ opacity: 1, scale: 1 }} transition={entrance(0.8)}>
             <span className={styles.sealRing} aria-hidden="true"/>

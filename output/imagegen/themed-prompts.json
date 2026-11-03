@@ -1,0 +1,57 @@
+{
+  "generation_mode": "built-in image_gen",
+  "assets": [
+    {
+      "filename": "jungle-party.webp",
+      "prompt": "Use case: product-mockup.\nAsset type: an AI-generated cake inspiration photograph for a premium bespoke bakery website, a standalone image rather than a collage.\nPrimary request: a beautifully handcrafted TWO-TIER jungle birthday cake in pastel sage green and warm ivory, featuring charming realistic edible fondant elephant, giraffe and lion figures, delicate edible botanical leaves and carefully sculpted foliage. The cake should feel boutique, exquisite and believable rather than cartoonish or mass produced.\nScene/backdrop: warm ivory plaster wall, pale beige stone table or low stone plinth, minimal quiet studio setting.\nComposition/framing: portrait 2:3 at the highest native resolution; the entire cake, every topper and full elegant cake stand must fit comfortably inside the frame. Leave generous breathing room above, below and on both sides for responsive crops. Cake occupies about 65% of frame height. Camera at cake level with a subtle three-quarter view. Crisp focus on the entire cake front to back with sharp, detailed edges.\nLighting/mood: soft directional daylight entering from the left, subtle realistic contact shadows, refined high-end food editorial photography with warm natural colour, no harsh highlights.\nColor palette: restrained ivory, pale sage, muted blush accents, small natural warm-gold details.\nMaterials/textures: visible edible frosting texture, delicate matte fondant, tiny hand-shaped details, natural cake imperfections conveying craftsmanship. Photograph of a real edible cake, never plastic or glossy CGI.\nConstraints: ONE standalone cake photograph only. No people, hands, licensed characters, lettering, text, names, numbers, logos or watermark. No collage, no split frame, no graphic overlays.",
+      "returned_original_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-212c-78b3-9ca8-4f2b35f2619e\\exec-09229f0d-4d9e-4588-b618-b66b2a48e150.png",
+      "workspace_original_path": "output/imagegen/jungle-party.png",
+      "optimized_path": "public/images/generated/jungle-party.webp",
+      "generation_mode": "built-in image_gen",
+      "usage": "AI-generated design inspiration; not an actual past order",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 2258824,
+      "webp_bytes": 167284
+    },
+    {
+      "filename": "couture-dress.webp",
+      "prompt": "Use case: product-mockup.\nAsset type: an AI-generated cake inspiration photograph for a premium bespoke bakery website, a standalone image rather than a collage.\nPrimary request: a sculpted couture-dress designer cake: an elegant blush-pink fondant dress with a refined fitted bodice, elaborate layered ruffled skirt, delicate edible pleating and one beautiful sugar bow. The whole dress is an edible cake sculpture, not a doll. No doll head or face, no mannequin head or torso visible above the bodice, no licensed character. Fine tailoring-like craftsmanship and delicate realistic hand-shaped fondant edges. The skirt should be full and gracefully draped, with small variations in blush tones, an ivory cake pedestal and a restrained muted-gold edge.\nScene/backdrop: warm ivory plaster wall, pale beige stone table or low stone plinth, minimal quiet studio setting.\nComposition/framing: portrait 2:3 at the highest native resolution; the entire cake, all decorative elements and the full elegant cake stand must fit comfortably inside the frame. Leave generous breathing room above, below and on both sides for responsive crops. Cake occupies about 65% of frame height. Camera at cake level with a subtle three-quarter view. Crisp focus on the entire cake front to back with sharp, detailed edges.\nLighting/mood: soft directional daylight entering from the left, subtle realistic contact shadows, refined high-end food editorial photography with warm natural colour, no harsh highlights.\nColor palette: restrained ivory, muted blush, pale sage where appropriate, and tiny warm-gold accents.\nMaterials/textures: visible edible frosting texture, delicate matte fondant, tiny hand-shaped details, natural cake imperfections conveying craftsmanship. Photograph of a real edible cake, never plastic or glossy CGI.\nConstraints: ONE standalone cake photograph only. No people, hands, licensed characters, lettering, text, names, numbers, logos or watermark. No collage, no split frame, no graphic overlays.",
+      "returned_original_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-212c-78b3-9ca8-4f2b35f2619e\\exec-08dad1ca-3c9c-4d70-ba83-bf3faa18f64b.png",
+      "workspace_original_path": "output/imagegen/couture-dress.png",
+      "optimized_path": "public/images/generated/couture-dress.webp",
+      "generation_mode": "built-in image_gen",
+      "usage": "AI-generated design inspiration; not an actual past order",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 2064729,
+      "webp_bytes": 137260
+    },
+    {
+      "filename": "construction-party.webp",
+      "prompt": "Use case: product-mockup.\nAsset type: an AI-generated cake inspiration photograph for a premium bespoke bakery website, a standalone image rather than a collage.\nPrimary request: a beautifully handcrafted TWO-TIER construction-themed birthday cake, warm ivory and muted butter-yellow frosting. One small realistic edible miniature excavator with finely detailed tracks and digging arm sits naturally on the cake. Delicate chocolate soil and a few tiny edible construction details are integrated sparingly. Playful, tasteful and sophisticated, never crowded or industrial. The edible excavator is muted warm yellow with tiny dark details; no real plastic toys. Keep the top of the cake and every excavator part clearly within the frame.\nScene/backdrop: warm ivory plaster wall, pale beige stone table or low stone plinth, minimal quiet studio setting.\nComposition/framing: portrait 2:3 at the highest native resolution; the entire cake, all decorative elements and the full elegant cake stand must fit comfortably inside the frame. Leave generous breathing room above, below and on both sides for responsive crops. Cake occupies about 65% of frame height. Camera at cake level with a subtle three-quarter view. Crisp focus on the entire cake front to back with sharp, detailed edges.\nLighting/mood: soft directional daylight entering from the left, subtle realistic contact shadows, refined high-end food editorial photography with warm natural colour, no harsh highlights.\nColor palette: restrained ivory, muted blush, pale sage where appropriate, and tiny warm-gold accents.\nMaterials/textures: visible edible frosting texture, delicate matte fondant, tiny hand-shaped details, natural cake imperfections conveying craftsmanship. Photograph of a real edible cake, never plastic or glossy CGI.\nConstraints: ONE standalone cake photograph only. No people, hands, licensed characters, lettering, text, names, numbers, logos or watermark. No collage, no split frame, no graphic overlays.",
+      "returned_original_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-212c-78b3-9ca8-4f2b35f2619e\\exec-3ae48fd9-746b-4870-8d47-33c3be4de8f0.png",
+      "workspace_original_path": "output/imagegen/construction-party.png",
+      "optimized_path": "public/images/generated/construction-party.webp",
+      "generation_mode": "built-in image_gen",
+      "usage": "AI-generated design inspiration; not an actual past order",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 2148037,
+      "webp_bytes": 166846
+    },
+    {
+      "filename": "princess-castle.webp",
+      "prompt": "Use case: product-mockup.\nAsset type: an AI-generated cake inspiration photograph for a premium bespoke bakery website, a standalone image rather than a collage.\nPrimary request: a beautifully handcrafted small princess CASTLE cake in warm ivory and very pale blush pink, refined slender turrets with delicate edible conical roofs, tiny realistic pastel sugar flowers and subtle elegant architectural details. Romantic and refined, a believable bespoke celebration cake, no licensed character, no doll, no excessive glitter. The castle structure is made of edible fondant over cake. A few minute muted-gold details may accent the turrets, with clean architectural proportions and delicate realistic flower petals.\nScene/backdrop: warm ivory plaster wall, pale beige stone table or low stone plinth, minimal quiet studio setting.\nComposition/framing: portrait 2:3 at the highest native resolution; the entire cake, all decorative elements and the full elegant cake stand must fit comfortably inside the frame. Leave generous breathing room above, below and on both sides for responsive crops. Cake occupies about 65% of frame height. Camera at cake level with a subtle three-quarter view. Crisp focus on the entire cake front to back with sharp, detailed edges.\nLighting/mood: soft directional daylight entering from the left, subtle realistic contact shadows, refined high-end food editorial photography with warm natural colour, no harsh highlights.\nColor palette: restrained ivory, muted blush, pale sage where appropriate, and tiny warm-gold accents.\nMaterials/textures: visible edible frosting texture, delicate matte fondant, tiny hand-shaped details, natural cake imperfections conveying craftsmanship. Photograph of a real edible cake, never plastic or glossy CGI.\nConstraints: ONE standalone cake photograph only. No people, hands, licensed characters, lettering, text, names, numbers, logos or watermark. No collage, no split frame, no graphic overlays.",
+      "returned_original_path": "C:\\Users\\Yohan Gowda D\\.codex\\generated_images\\01a19b4e-212c-78b3-9ca8-4f2b35f2619e\\exec-9bed72ee-a63b-4de1-a283-7cae42c53475.png",
+      "workspace_original_path": "output/imagegen/princess-castle.png",
+      "optimized_path": "public/images/generated/princess-castle.webp",
+      "generation_mode": "built-in image_gen",
+      "usage": "AI-generated design inspiration; not an actual past order",
+      "width": 1024,
+      "height": 1536,
+      "original_bytes": 2074996,
+      "webp_bytes": 140338
+    }
+  ]
+}
