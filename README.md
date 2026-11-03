@@ -28,6 +28,16 @@ Copy `.env.example` to `.env.local` and supply the real business details. The ce
 
 The bakery schema includes only supplied details: name, founder, Bangalore/India, and Instagram. Add a street address, telephone, hours, or other business information only when verified. No prices, delivery radius, payment terms, or unsupported ratings are invented.
 
+## Deploy on Netlify
+
+Connect the Git repository to Netlify and select the Next.js framework. This project lives at the repository root: leave the base directory empty, use `npm run build` as the build command, and `.next` as the publish directory. The root `netlify.toml` records those settings and selects Node.js 22. Netlify automatically installs its Next.js adapter; no manually pinned plugin is required.
+
+In Netlify's environment variables, set `NEXT_PUBLIC_SITE_URL` to the final HTTPS site origin, such as the assigned `https://your-site.netlify.app` address or your custom domain. Without it, this project deliberately stays `noindex` and uses the local metadata fallback. Set `NEXT_PUBLIC_WHATSAPP_NUMBER` to the verified business number, including country code and digits only, to enable WhatsApp handoff. Rebuild after changing either value. The copy-and-Instagram enquiry flow remains available while the number is empty.
+
+Commit application source, `public/`, fonts, `package.json`, `package-lock.json`, configuration files, and `.env.example`. The ignore rules exclude dependencies, build output, local environment files, browser artifacts, original reference photos, and generated image originals. The small generation prompt manifests remain tracked. Local-only files stay on disk, but files committed before these ignore rules remain in older Git history.
+
+Deploy through Netlify's Git build workflow so its adapter can prepare image optimization and the Next.js runtime. The local screenshots and full-resolution originals referenced by this README are optional review files and are not needed for deployment.
+
 ## Enquiry journey
 
 Required fields are validated with React Hook Form and Zod. Celebration dates use Bangalore's calendar date. Customers can select up to three JPG/PNG/WebP reference images, up to 5 MB each, and preview/remove them locally.

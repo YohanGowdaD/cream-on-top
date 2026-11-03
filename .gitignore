@@ -7,3 +7,24 @@ out/
 test-results/
 playwright-report/
 .sites-runtime/
+
+# Hosting state and local reports
+.netlify/
+coverage/
+artifacts/
+
+# Original references and generated originals stay on this computer.
+# The web-ready images in public/ remain tracked.
+/reference-assets/
+/output/*
+!/output/imagegen/
+/output/imagegen/*
+!/output/imagegen/*-prompts.json
+
+# Local logs, Python caches and operating-system metadata
+*.log
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+Desktop.ini
