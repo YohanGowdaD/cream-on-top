@@ -1,0 +1,22 @@
+.frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageSurface {
+  position: absolute;
+  inset: -16px 0;
+}
+
+.imageSurface > img {
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame {
+    clip-path: none !important;
+  }
+  .imageSurface {
+    transform: none !important;
+  }
+}

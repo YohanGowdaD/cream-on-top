@@ -1,0 +1,123 @@
+/* Small details share the same timing as the larger editorial reveals. */
+
+:root {
+  --ease-editorial: cubic-bezier(.22, 1, .36, 1);
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  transition: background .35s, color .35s, border-color .35s, box-shadow .4s, transform .4s var(--ease-editorial);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 35%, rgb(255 253 252 / 10%) 50%, transparent 65%);
+  transform: translateX(-130%);
+  transition: transform .8s var(--ease-editorial);
+  pointer-events: none;
+}
+
+.button:hover::before {
+  transform: translateX(130%);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.text-link {
+  transition: color .25s, gap .45s var(--ease-editorial), border-color .25s;
+}
+
+.text-link:hover {
+  border-color: var(--rose);
+}
+
+.collection-photo {
+  transition: box-shadow .6s var(--ease-editorial);
+}
+
+.collection-photo > img {
+  transition: transform 1.05s var(--ease-editorial);
+}
+
+.collection-title svg {
+  transition: transform .45s var(--ease-editorial);
+}
+
+.collection-title h3 {
+  transition: color .3s;
+}
+
+.collection-link:hover .collection-title svg {
+  transform: translate(3px, -3px);
+}
+
+.collection-link:hover .collection-title h3 {
+  color: var(--rose);
+}
+
+.collection-explore {
+  transition: opacity .4s, transform .6s var(--ease-editorial);
+}
+
+.quality > svg {
+  transition: transform .5s var(--ease-editorial);
+}
+
+.quality:hover > svg {
+  transform: translateY(-4px) rotate(-5deg);
+}
+
+.instagram-photo > img {
+  transition: transform 1.1s var(--ease-editorial);
+}
+
+.instagram-photo:hover > img {
+  transform: scale(1.06);
+}
+
+.instagram-photo > span svg {
+  transition: transform .5s var(--ease-editorial);
+  transform: translateY(8px);
+}
+
+.instagram-photo:hover > span svg, .instagram-photo:focus-visible > span svg {
+  transform: translateY(0);
+}
+
+.floating-enquiry {
+  transition: opacity .4s, transform .5s var(--ease-editorial), background .3s, box-shadow .3s;
+}
+
+.floating-enquiry:hover {
+  box-shadow: 0 8px 30px #38252225;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px #38252212;
+  }
+  .button:active {
+    transform: translateY(0);
+  }
+  .collection-link:hover .collection-photo {
+    box-shadow: 0 15px 32px #38252210;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button::before {
+    display: none;
+  }
+  .button, .button:hover, .button:active,
+  .collection-title svg, .collection-link:hover .collection-title svg,
+  .quality:hover > svg, .instagram-photo > span svg,
+  .instagram-photo:hover > img {
+    transform: none;
+  }
+}

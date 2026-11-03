@@ -1,0 +1,112 @@
+[
+  {
+    "name": "desktop",
+    "viewport": 1440,
+    "document": 1440,
+    "headings": [
+      "Every celebrationdeserves somethingextraordinary.",
+      "A little sweetness.A lot of love.",
+      "Made for every celebration.",
+      "A Gallery of Sweet Moments",
+      "Behind every cake,there’s a story.",
+      "More than just a cake.",
+      "Sweet words from happy hearts.",
+      "Let’s create something special.",
+      "Your dream cakestarts right here.",
+      "Follow the sweetness.",
+      "Your celebration.Our creation."
+    ],
+    "hiddenReveals": [],
+    "brokenImages": [],
+    "overflowing": [],
+    "errors": []
+  },
+  {
+    "name": "laptop",
+    "viewport": 1024,
+    "document": 1024,
+    "headings": [
+      "Every celebrationdeserves somethingextraordinary.",
+      "A little sweetness.A lot of love.",
+      "Made for every celebration.",
+      "A Gallery of Sweet Moments",
+      "Behind every cake,there’s a story.",
+      "More than just a cake.",
+      "Sweet words from happy hearts.",
+      "Let’s create something special.",
+      "Your dream cakestarts right here.",
+      "Follow the sweetness.",
+      "Your celebration.Our creation."
+    ],
+    "hiddenReveals": [],
+    "brokenImages": [],
+    "overflowing": [],
+    "errors": []
+  },
+  {
+    "name": "tablet",
+    "viewport": 768,
+    "document": 768,
+    "headings": [
+      "Every celebrationdeserves somethingextraordinary.",
+      "A little sweetness.A lot of love.",
+      "Made for every celebration.",
+      "A Gallery of Sweet Moments",
+      "Behind every cake,there’s a story.",
+      "More than just a cake.",
+      "Sweet words from happy hearts.",
+      "Let’s create something special.",
+      "Your dream cakestarts right here.",
+      "Follow the sweetness.",
+      "Your celebration.Our creation."
+    ],
+    "hiddenReveals": [],
+    "brokenImages": [],
+    "overflowing": [],
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "viewport": 390,
+    "document": 390,
+    "headings": [
+      "Every celebrationdeserves somethingextraordinary.",
+      "A little sweetness.A lot of love.",
+      "Made for every celebration.",
+      "A Gallery of Sweet Moments",
+      "Behind every cake,there’s a story.",
+      "More than just a cake.",
+      "Sweet words from happy hearts.",
+      "Let’s create something special.",
+      "Your dream cakestarts right here.",
+      "Follow the sweetness.",
+      "Your celebration.Our creation."
+    ],
+    "hiddenReveals": [],
+    "brokenImages": [],
+    "overflowing": [],
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "viewport": 360,
+    "document": 360,
+    "headings": [
+      "Every celebrationdeserves somethingextraordinary.",
+      "A little sweetness.A lot of love.",
+      "Made for every celebration.",
+      "A Gallery of Sweet Moments",
+      "Behind every cake,there’s a story.",
+      "More than just a cake.",
+      "Sweet words from happy hearts.",
+      "Let’s create something special.",
+      "Your dream cakestarts right here.",
+      "Follow the sweetness.",
+      "Your celebration.Our creation."
+    ],
+    "hiddenReveals": [],
+    "brokenImages": [],
+    "overflowing": [],
+    "errors": []
+  }
+]

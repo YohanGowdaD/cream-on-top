@@ -1,0 +1,7 @@
+import { PhotoReveal } from "./PhotoReveal";
+import { ArrowUpRight } from "lucide-react";
+import { Reveal } from "./Reveal";
+
+export function FounderStory() {
+  return <section id="our-story" className="founder section-space"><div className="container founder-grid"><Reveal className="founder-copy"><p className="eyebrow">THE HEART BEHIND THE ART</p><h2>Behind every cake,<br/>there’s a <em>story.</em></h2><p className="founder-opening">“Sixteen-year-old me had a dream that felt much bigger than me.”</p><p>What started as a passion gradually became a journey of creativity, learning and countless sweet memories.</p><p>After graduating from APCA Bangalore and learning from cake artists around the world, I turned that dream into Cream on Top.</p><p>Today, every cake I create carries the same excitement, love and dedication as my very first.</p><span className="founder-signature">With love, Neha</span><a href="#enquiry" className="text-link">Let’s create your sweet story <ArrowUpRight size={16}/></a></Reveal><Reveal className="founder-visual" delay={.1}><PhotoReveal className="founder-photo" src="/images/founder/neha-portrait.webp" alt="Neha Gupta in a red dress, holding a strawberry-topped cake from her Cream on Top studio" sizes="(max-width: 767px) 90vw, 40vw"/><div className="founder-milestone"><span className="milestone-number">8</span><div><span>YEARS OF CREAM ON TOP</span><p>A cherished milestone in<br/>a beautiful journey.</p></div></div><span className="founder-caption">NEHA GUPTA · FOUNDER & CAKE ARTIST</span></Reveal></div></section>;
+}

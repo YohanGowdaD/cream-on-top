@@ -1,0 +1,619 @@
+.hero {
+  position: relative;
+  overflow: clip;
+  background: var(--cream);
+}
+
+.layout {
+  width: min(1280px, calc(100% - 128px));
+  min-height: min(780px, calc(100svh - 155px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.12fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0 50px;
+}
+
+.copy {
+  position: relative;
+  z-index: 2;
+  padding: 15px 0 25px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  color: #914b48;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.eyebrow > span {
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.title {
+  font-size: clamp(53px, 5.5vw, 82px);
+  line-height: 1.04;
+  letter-spacing: -2.4px;
+}
+
+.lineMask {
+  display: block;
+  overflow: hidden;
+  margin: -0.09em -0.1em;
+  padding: 0.09em 0.1em;
+}
+
+.line, .italicLine {
+  display: block;
+  transform-origin: left bottom;
+  white-space: nowrap;
+}
+
+.italicLine {
+  color: var(--rose);
+  font-style: italic;
+  padding-bottom: 0.06em;
+}
+
+.description {
+  margin-top: 29px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.actions > a:first-child {
+  gap: 12px;
+  padding: 17px 22px;
+}
+
+.actions > a {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.note {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 45px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.note > span > span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.noteRule {
+  width: 35px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  justify-self: end;
+  padding: 14px 34px 26px 39px;
+}
+
+.backdrop {
+  position: absolute;
+  top: -22px;
+  right: -64px;
+  bottom: -14px;
+  left: 26%;
+  background: #ecddd2;
+}
+
+.frameLine {
+  position: absolute;
+  inset: 0 20px 40px 54px;
+  border: 1px solid #bea58e;
+}
+
+.photograph {
+  position: relative;
+  aspect-ratio: 371 / 555;
+  max-height: 650px;
+  overflow: hidden;
+  background: #d8bfa8;
+}
+
+.depthLayer {
+  position: absolute;
+  inset: -24px 0;
+}
+
+.imageLayer {
+  position: absolute;
+  inset: 0 -9px;
+}
+
+.imageLayer > img {
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.photoLabel {
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
+  padding: 5px 9px;
+  font-size: 10px;
+  letter-spacing: .8px;
+  background: rgb(56 37 34 / 65%);
+  color: var(--paper);
+}
+
+.seal {
+  position: absolute;
+  bottom: 57px;
+  left: -13px;
+  width: 143px;
+  height: 143px;
+  background: var(--cream);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 6px 25px #3825220d;
+}
+
+.sealRing {
+  position: absolute;
+  inset: 8px;
+  border: 1px solid #c4a28d;
+  border-radius: 50%;
+}
+
+.seal > svg {
+  color: var(--rose);
+  margin-bottom: 9px;
+}
+
+.seal > span:not(.sealRing) {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-size: 23px;
+  line-height: 1.02;
+}
+
+.seal small {
+  font-size: 9px;
+  letter-spacing: .45px;
+  margin-top: 11px;
+}
+
+.photoFootnote {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: #69544a;
+  font-size: 10px;
+  letter-spacing: .8px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.verticalCaption {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  transform: translateY(-50%);
+  font-size: 9px;
+  color: #806d61;
+  letter-spacing: .8px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  width: min(1280px, calc(100% - 128px));
+  margin: 0 auto;
+  padding: 0 0 29px;
+}
+
+.scrollCue {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 11px;
+  letter-spacing: .8px;
+}
+
+.scrollTrack {
+  border: 1px solid #cdb6a8;
+  width: 26px;
+  height: 36px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  color: var(--rose);
+  overflow: hidden;
+}
+
+.scrollTrack > svg {
+  animation: inviteScroll 1.5s ease-in-out 3;
+}
+
+.bottomNote {
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: .2px;
+}
+
+.bottomNote em {
+  color: var(--rose);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 17px;
+  padding-left: 4px;
+}
+
+@keyframes inviteScroll {
+  0%, 100% {
+    transform: translateY(-2px);
+    opacity: .65;
+  }
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1600px) {
+  .layout {
+    min-height: 760px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .layout, .bottom {
+    width: calc(100% - 80px);
+  }
+  .layout {
+    min-height: 655px;
+    gap: 10px;
+  }
+  .title {
+    font-size: clamp(50px, 5.5vw, 66px);
+    letter-spacing: -1.8px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 1px;
+    gap: 8px;
+  }
+  .actions {
+    gap: 16px;
+  }
+  .actions > a {
+    font-size: 14px;
+  }
+  .actions > a:first-child {
+    padding: 15px 16px;
+    gap: 12px;
+  }
+  .visual {
+    padding-left: 25px;
+    padding-right: 24px;
+  }
+  .backdrop {
+    right: -40px;
+  }
+  .frameLine {
+    left: 37px;
+    right: 12px;
+  }
+  .seal {
+    width: 128px;
+    height: 128px;
+    left: -8px;
+  }
+  .seal > span:not(.sealRing) {
+    font-size: 22px;
+  }
+  .seal > svg {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 7px;
+  }
+  .seal small {
+    font-size: 9px;
+    letter-spacing: .45px;
+    margin-top: 8px;
+  }
+  .verticalCaption {
+    right: 0;
+    font-size: 9px;
+  }
+  .photoFootnote {
+    font-size: 10px;
+    letter-spacing: .8px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .layout {
+    min-height: 580px;
+    grid-template-columns: 1.14fr 1fr;
+    padding-block: 35px;
+  }
+  .title {
+    font-size: clamp(42px, 5.6vw, 57px);
+    letter-spacing: -1.4px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 23px;
+  }
+  .eyebrow > span {
+    font-size: 19px;
+  }
+  .description {
+    font-size: 16px;
+    margin-top: 23px;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 23px;
+  }
+  .note {
+    margin-top: 26px;
+    font-size: 14px;
+  }
+  .note > span > span {
+    font-size: 13px;
+  }
+  .visual {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .backdrop {
+    top: -15px;
+    bottom: -7px;
+  }
+  .frameLine {
+    left: 30px;
+    right: 10px;
+    top: 4px;
+  }
+  .seal {
+    width: 128px;
+    height: 128px;
+    bottom: 55px;
+    left: -6px;
+  }
+  .sealRing {
+    inset: 6px;
+  }
+  .seal > span:not(.sealRing) {
+    font-size: 22px;
+  }
+  .seal > svg {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 5px;
+  }
+  .seal small {
+    font-size: 9px;
+  }
+  .photoFootnote > span:last-child {
+    display: none;
+  }
+  .photoLabel {
+    font-size: 10px;
+    right: 12px;
+    bottom: 12px;
+    padding-inline: 7px;
+    letter-spacing: .8px;
+  }
+  .verticalCaption {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout {
+    width: calc(100% - 48px);
+    grid-template-columns: 1fr;
+    gap: 39px;
+    padding-top: 39px;
+    padding-bottom: 25px;
+  }
+  .copy {
+    text-align: center;
+    padding: 0;
+  }
+  .eyebrow {
+    justify-content: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 26px;
+  }
+  .eyebrow > span {
+    font-size: 22px;
+  }
+  .title {
+    font-size: clamp(45px, 8.7vw, 65px);
+    letter-spacing: -1.5px;
+  }
+  .description {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 26px;
+  }
+  .actions > a {
+    font-size: 14px;
+  }
+  .actions > a:first-child {
+    padding: 15px 16px;
+    gap: 12px;
+  }
+  .note {
+    justify-content: center;
+    text-align: left;
+    margin-top: 29px;
+    font-size: 14px;
+  }
+  .visual {
+    width: min(450px, 100%);
+    justify-self: center;
+    padding: 13px 24px 22px;
+  }
+  .photograph {
+    aspect-ratio: 371 / 465;
+    max-height: 540px;
+  }
+  .backdrop {
+    top: 0;
+    left: 23%;
+    right: -24px;
+    bottom: 3px;
+  }
+  .frameLine {
+    left: 35px;
+    right: 13px;
+    bottom: 36px;
+    top: 3px;
+  }
+  .seal {
+    width: 128px;
+    height: 128px;
+    left: 0;
+    bottom: 51px;
+  }
+  .seal > span:not(.sealRing) {
+    font-size: 22px;
+  }
+  .seal > svg {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 7px;
+  }
+  .seal small {
+    font-size: 9px;
+    letter-spacing: .45px;
+  }
+  .verticalCaption {
+    font-size: 9px;
+    right: 4px;
+  }
+  .photoFootnote {
+    font-size: 10px;
+    margin-top: 14px;
+  }
+  .photoFootnote > span:last-child {
+    display: none;
+  }
+  .bottom {
+    width: calc(100% - 48px);
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+  .bottomNote {
+    display: none;
+  }
+  .scrollCue {
+    font-size: 11px;
+    letter-spacing: .8px;
+  }
+  .scrollTrack {
+    height: 30px;
+    width: 23px;
+  }
+}
+
+@media (max-width: 390px) {
+  .layout {
+    width: calc(100% - 36px);
+    padding-top: 30px;
+    gap: 32px;
+  }
+  .title {
+    font-size: 43px;
+    letter-spacing: -1.5px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 1px;
+    gap: 7px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .actions {
+    gap: 16px;
+  }
+  .actions > a {
+    font-size: 14px;
+  }
+  .actions > a:first-child {
+    padding: 15px 16px;
+    gap: 12px;
+  }
+  .visual {
+    padding-inline: 19px;
+  }
+  .backdrop {
+    right: -18px;
+  }
+  .frameLine {
+    left: 30px;
+    right: 9px;
+  }
+  .verticalCaption {
+    right: 0;
+    font-size: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .copy > *, .copy > div, .line, .italicLine, .frameLine, .seal, .photoFootnote {
+    opacity: 1 !important;
+  }
+  .line, .italicLine, .imageLayer, .depthLayer {
+    transform: none !important;
+  }
+  .photograph {
+    clip-path: none !important;
+  }
+  .scrollTrack > svg {
+    animation: none;
+  }
+}
